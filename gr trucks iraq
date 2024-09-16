@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy and Sell Trucks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Truck Dealer</h1>
+        <nav>
+            <ul>
+                <li><a href="#trucks-for-sale">Trucks for Sale</a></li>
+                <li><a href="#sell-your-truck">Sell Your Truck</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="trucks-for-sale">
+        <h2>Available Trucks for Sale</h2>
+        <div class="truck-list">
+            <div class="truck-item">
+                <h3>Ford F-150</h3>
+                <p>Price: $25,000</p>
+                <p>Mileage: 30,000 miles</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="truck-item">
+                <h3>Chevrolet Silverado</h3>
+                <p>Price: $28,500</p>
+                <p>Mileage: 22,000 miles</p>
+                <button>Buy Now</button>
+            </div>
+            <!-- Add more trucks here -->
+        </div>
+    </section>
+
+    <section id="sell-your-truck">
+        <h2>Sell Your Truck</h2>
+        <form action="submit_truck.html" method="post">
+            <label for="truck-make">Truck Make:</label>
+            <input type="text" id="truck-make" name="truck-make" required><br>
+
+            <label for="truck-model">Truck Model:</label>
+            <input type="text" id="truck-model" name="truck-model" required><br>
+
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required><br>
+
+            <label for="mileage">Mileage:</label>
+            <input type="text" id="mileage" name="mileage" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: truckdealer@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Truck Dealer. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
